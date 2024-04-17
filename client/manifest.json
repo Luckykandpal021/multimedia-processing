@@ -1,0 +1,11 @@
+{
+    "name":"Media Processing",
+    "version": "0.0.1",
+    "description": "File/ Media Processing,  Video to Audio, Video/Audio/Image Compression",
+    "manifest_version":3,
+    "author":"Lucky Kandpal",
+    "action":{
+        "default_popup":"index.html",
+        "default_title":"Media ProcessingX"
+    }
+}
