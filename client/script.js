@@ -7,6 +7,7 @@
 // document.getElementById('upload_file_button')
 
 
+
 document.getElementById('upload_file_button').addEventListener('change', async function(event) {
     const file = event.target.files[0];
     const videoPlayer = document.getElementById('videoPlayer');
@@ -20,6 +21,14 @@ document.getElementById('upload_file_button').addEventListener('change', async f
             // Create a FormData object
             const formData = new FormData();
             formData.append('input_video', file);
+
+            const keyValue={
+                type:"compressor"
+            };
+
+            Object.keys(keyValue).forEach(key => {
+                formData.append(key,keyValue[key]);
+            });
 
             // Make a POST request to the API endpoint
             const response = await fetch(apiUrl, {
@@ -41,13 +50,13 @@ document.getElementById('upload_file_button').addEventListener('change', async f
             const downloadLink=document.createElement('a');
             downloadLink.href=audioURL;
             console.log(fileName)
-            downloadLink.download = fileName.replace(/\.[^/.]+$/, "") + '_audio.mp3'; // Modify the download file name
+            downloadLink.download = fileName.replace(/\.[^/.]+$/, "") + '_mp.mp4'; // Modify the download file name
             downloadLink.style.display='none';
 
             document.body.appendChild(downloadLink);
             downloadLink.click();
                         // Clean up: remove the download link from the document body
-                        document.body.removeChild(downloadLink);
+            document.body.removeChild(downloadLink);
 
 
 
