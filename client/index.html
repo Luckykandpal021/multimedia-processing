@@ -2,14 +2,23 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Media Processing</title>
+
+
 </head>
 <body>
     <p>Video to Audio</p>
-    <div class="upload_file_button">
-        <input type="file"/>
+    <div>
+        <input type="file" accept="video/*" id="upload_file_button"/>
     </div>
+    <video id="videoPlayer" controls style="display: none;" width="320" height="240"  ></video>
+
+    <!-- <div>
+        <video src=""></video>
+
+    </div> -->
+    <script src="script.js"></script>
+
 </body>
 </html>
