@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
     <title>Media Processing</title>
 
 
@@ -14,20 +15,118 @@
         <video id="videoPlayerCompress" controls style="display: none;" height="200" width="300"></video>
     </div> -->
     
+
+    <div class="parent">
+        <img src="Brunchx Pro logo.png" alt="Brunch logo" class="brunch_logo"  height="25px">
+        <hr class="image-divider">
+
+<div>
+
+<div class="video_compressor_zone"style="margin-top: 10px;margin-inline: 7px;display: flex; flex-direction: column;">
+    <img src="video_compressor_updated.png" height="100px"  style=" display: block;margin: 0 auto;"/>
+    <p style=" margin-top: 14px; font-weight: 500; font-size: 15x;text-align: center; ">Compress Video</p>
+    <p style=" margin-top: 14px; font-weight: 500; font-size: 15x;text-align: center; ">Current File Size:- </p>
+
+   <video id="videoPlayerCompress" controls style="display: none;" height="200" width="300"></video>
+   <input type="range" min="5" max="100" value="5">
+
+   <div style="height: 10px;"></div>
+   <button class="compression-btn">Compress</button>
+
+</div>
+
+
+
+    <div class="video-format-change"style="margin-top: 10px;margin-inline: 7px;display: flex; flex-direction: column;  visibility:hidden">
+        <img src="Conversion_img_updated.png" height="100px"  style=" display: block;margin: 0 auto;"/>
+        <p style=" margin-top: 14px; font-weight: 500; font-size: 15x;text-align: center; ">Change Format: MP4 to AVI, MOV, WEBM, 3GP, MKV</p>
+       <video id="videoPlayerCompress" controls style="display: none;" height="200" width="300"></video>
+       <label for="current_format" style="margin-top: 10px;">Convert To:</label>
+       <select name="video_format"style="margin-top: 10px;">
+        <option value="video_format_avi">AVI</option>
+        <option value="video_format_mov">MOV</option>
+        <option value="video_format_3gp">3GP</option>
+        <option value="video_format_webm">WEBM</option>
+        <option value="video_format_mkv">MKV</option>
+
+      </select>
+    <div style="height: 10px;"></div>
+       <button class="video-format-btn">Convert</button>
     
-    <p>Video Compressor</p>
+</div>
 
 
-    <div>
-        <input type="file" accept="video/*" id="upload_file_button"/>
+   <div class="video-to-audio"style="margin-top: 10px;margin-inline: 7px;display: flex; flex-direction: column; visibility:hidden  ">
+    <img src="v2a.png" height="100px"  style=" display: block;margin: 0 auto;"/>
+    <p style=" margin-top: 14px; font-weight: 500; font-size: 15x;text-align: center; ">Video To Audio</p>
+   <video id="videoPlayerCompress" controls style="display: none;" height="200" width="300"></video>
+   <button class="audio-btn">Convert To Audio</button>
+</div>
+
+        <div class="video-selection-features" >
+            <div class="video-selection-cols-1">
+                <div style="border: 1px solid #D9D9D9; display: flex; flex-direction: column; margin-right: 5px; ">
+                    <img src="v2a.png" height="70px" style="margin-inline: 7px; margin-top: 10px;"/>
+                    <p style="margin-inline: 20px; margin-top: 4px;">Video To Audio</p>
+            
+                </div>
+                <div style="border: 1px solid #D9D9D9; display: flex; flex-direction: column; margin-left: 5px;">
+                    <div style="height: 18px;"></div>
+                    <img src="Conversion_img_updated.png" height="40" width="40"  style=" justify-self: center;
+                        display: block;margin: 0 auto;"/>
+                    <p style="margin-inline: 20px; margin-top: 14px;">MP4 to AVI, MOV,<br> WEBM, 3GP, MKV</p>
+
+            
+                </div>
+
+
+            </div>
+            <div class="video-selection-cols-2">
+                <div style="border: 1px solid #D9D9D9; display: flex; flex-direction: column; margin-right: 5px; ">
+                    <img src="video_compressor_updated.png" height="70px" style="margin-inline: 7px; margin-top: 10px;"/>
+                    <p style="margin-inline: 16px; margin-top: 4px;">Video Compressor</p>
+            
+                </div>
+                <div style="border: 1px solid #D9D9D9; display: flex; flex-direction: column; margin-left: 5px;">
+                    <img src="Coming_soon_img.png" height="100px" style="margin-inline: 7px; margin-top: 1px;"/>
+                    <div style="width: 130px; margin-top: 4px;"></div>
+            
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+
+        <div class="file-picker">
+            <input type="file" accept="video/*" id="upload_file_button"/>
+
+            <img src="upload_btn_brunch.png" alt="Upload File Brunch" height="50px" class="upload_btn_class"/>
+                <p style="margin-left: 17px; margin-top: 13px;"> Upload File</p>
+                <p style="margin-top: 5px;">or Drag and Drop</p>
+                <div style="height: 20px;"></div>
+
+        </div>
+        <div style="margin-top: 20px; margin-left: 20px;" hidden>(Image, Video,  Audio, Pdf, Word, Docx)</div>
+        <div style="height: 10px;"></div>
+
+        <!-- <p style="font-family: sans-serif">Video Compressor</p>
+
+
+        <div>
+            <input type="file" accept="video/*" id="upload_file_button"/>
+        </div>
+        <video id="videoPlayer" controls style="display: none;" width="320" height="240"  ></video> -->
+    
     </div>
-    <video id="videoPlayer" controls style="display: none;" width="320" height="240"  ></video>
 
     <!-- <div>
         <video src=""></video>
 
     </div> -->
-    <script src="script.js"></script>
+    <!-- <script src="script.js"></script> -->
 
 </body>
 </html>

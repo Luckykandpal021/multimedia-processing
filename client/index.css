@@ -1,0 +1,113 @@
+body{
+    background-color: #FAF7F7;
+}
+.parent{
+    width: auto;
+    height: auto;
+    background-color: white;
+    margin: 10px;
+    flex-direction: column;
+}
+ 
+.brunch_logo{
+    padding-inline: 10px;
+    padding-top: 7px;
+}
+.image-divider{
+    border-top: 1px solid #D9D9D9;
+}
+
+.upload_btn_class{
+    margin-top: 20px;
+}
+
+.audio-btn{
+        border: 1px dotted wheat;
+        color: white;
+        background-color: rgb(0, 183, 255);
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+      
+}
+.video-format-btn{
+    border: 1px dotted wheat;
+    color: white;
+    background-color: rgb(0, 183, 255);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+  
+}
+
+.compression-btn{
+    border: 1px dotted wheat;
+    color: white;
+    background-color: rgb(0, 183, 255);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+  
+}
+
+.file-picker {
+    visibility: hidden;
+    
+    margin-top: 20px;
+    margin-inline: 10px;
+    border: 1px solid #D9D9D9;
+    width: 270px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center; /* Center items vertically */
+}
+.file-picker input[type="file"] {
+    position: absolute;
+    width: 100px;
+    height: 70px;
+    cursor: pointer;
+    opacity: 0;
+}
+
+.video-selection-features{
+    visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
+    
+
+}
+.video-selection-cols-1{
+    visibility: hidden;
+
+    display: flex;
+
+}
+.video-selection-cols-2{
+    visibility: hidden;
+
+    display: flex;
+    margin-top: 20px;
+
+}
+.file-picker p{
+    margin: 0;
+    padding: 0;
+}
+
+
